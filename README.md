@@ -7,7 +7,6 @@ This will require a MongoDB service bound to the application.  The manifest poin
 
 example: cf create-service mongolab sandbox mongo-deployd
 
-Simply crearte the service, and perform a cf push.
+Simply crearte the service, and perform a cf push.  Once deployed, you can access the dashboard by adding /dashboard to your URL.
 
-
-Currently deploying using development environment so that keys are not required for dashboard access.
+Currently deploying using development environment so that keys are not required for dashboard access. 
