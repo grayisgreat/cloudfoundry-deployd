@@ -1,0 +1,8 @@
+---
+applications:
+- name: deployd
+  host: deployd-${random-word}
+  domain: cfapps.io
+  command: node development.js
+  services:
+  - mongo-deployd
