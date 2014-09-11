@@ -10,10 +10,9 @@ if(process.env.VCAP_SERVICES){
   var env = JSON.parse(process.env.VCAP_SERVICES);
   mongourl = env['mongolab'][0]['credentials']['uri'];
 }else{
-
-  mongourl = "mongodb://:@localhost:27017/db_name";
-
+  mongourl = "LOCAL_MONGO_URL";
 }
+
 var db_url = url.parse(mongourl);
 
 var server = deployd({
